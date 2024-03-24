@@ -6,9 +6,8 @@ const Header = () => {
     const  links = <>
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to='/jobs'>Jobs</NavLink></li>
-    <li><NavLink to='/home'>Home</NavLink></li>
     <li><NavLink to='/applied'>Applied Jobs</NavLink></li>
-    <li><NavLink to='/statistics'>Statistics </NavLink></li>
+    <li><NavLink to='/login'>Login </NavLink></li>
     <li><NavLink to='/blogs'>Blogs</NavLink></li>
 
     </>
@@ -23,7 +22,8 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Career Hub</a>
+          <img src="https://i.ibb.co/R9H64qM/images16.png" alt="" />
+          <a className="btn btn-ghost normal-case text-xl"></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

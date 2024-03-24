@@ -6,7 +6,7 @@ const Featured = () => {
 
     const [jobs, setJobs]= useState([]);
 
-    const[dataLength, setDataLength] = useState(4);
+    const[dataLength, setDataLength] = useState(12);
 
     useEffect(()=>{
         fetch('jobs.json')
@@ -17,12 +17,12 @@ const Featured = () => {
 
 
     return (
-<div>
+<div >
     <div>
-        <div ><h2 className=" text-5xl text-center">Featured Jobs: {jobs.length}</h2>
-        <p className=" text-2xl text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
+        <div >
+       
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-4 gap-5">
             {
                 jobs.slice(0, dataLength).map(job=><Job job={job}></Job>)
             }

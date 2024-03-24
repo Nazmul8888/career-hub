@@ -46,7 +46,7 @@ const AppliedJobs = () => {
           <h2 className="text-2xl">Applied Jobs: {appliedJobs.length}</h2> 
           <details className="dropdown mb-32">
     <summary className="m-1 btn">open or close</summary>
-    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 ">
     <li onClick={()=> handelJobsFilter('all')}><a>All</a></li>
     <li onClick={()=> handelJobsFilter('remote')}><a>Remote</a></li>
     <li onClick={()=> handelJobsFilter('onsite')}><a>Onsite</a></li>
